@@ -1,5 +1,4 @@
-
-
+=begin
 def square_array(array)
   
   sq_arr = []           #create placeholder for storing squared numbers
@@ -10,5 +9,12 @@ def square_array(array)
   
   sq_arr                #send output of squared numbers
 end 
+=end
 
-
+def square_array(array)
+  sq_arr = []
+  
+  array.collect { |x| sq << x ** 2 }
+  
+  sq_arr
+end
